@@ -6,11 +6,22 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/Service': {
+          target: 'http://m.mtime.cn',
+          host: 'm.mtime.cn',
+          changeOrigin: true//是否转化
+         
+        },
+        '/feature': {
+          target: 'https://static4da.mtime.cn',
+          host: 'static4da.mtime.cn',
+          changeOrigin: true//是否转化  
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST

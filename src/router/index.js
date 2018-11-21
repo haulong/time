@@ -5,13 +5,14 @@ import mall from '../components/mall'
 import news from '../components/news'
 import newsMovie from '../components/newsMovie'
 import home from '../components/home'
+import search from '../components/search'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: home
     },
     {
@@ -31,6 +32,10 @@ export default new Router({
           component: newsMovie
         }
       ]
+    },
+    {
+      path: '/search',
+      component: search
     }
   ]
 })
