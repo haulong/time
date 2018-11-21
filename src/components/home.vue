@@ -24,6 +24,7 @@
 	  	height: 0.62rem;
 	  	width: 0.92rem;
 	  	a{
+	  	  text-align: center;
 	  	  font-size: 0.18rem;
 	  	  color: black;
 		  line-height: 0.62rem;
@@ -37,6 +38,7 @@
 	  	a{
 	  	  color: black;
 	  	  line-height: 0.62rem;
+	  	  color: #bababa;
 	  	}
 	  }
 	}

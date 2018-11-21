@@ -1,5 +1,7 @@
 <template>	
-	购买页
+	<div>
+		购买页
+	</div>
 </template>
 <script>
 	export default{

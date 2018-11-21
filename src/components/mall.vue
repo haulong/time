@@ -1,5 +1,7 @@
 <template>	
-	商城页
+	<div>
+		商城
+	</div>
 </template>
 <script>
 	export default{

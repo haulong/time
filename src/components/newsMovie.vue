@@ -1,5 +1,7 @@
 <template>	
-	新闻
+	<div>
+		新闻
+	</div>
 </template>
 <script>
 	export default{
