@@ -1,9 +1,9 @@
 <template>	
-	新闻
+	购买页
 </template>
 <script>
 	export default{
-		name:"newsMovie",
+		name:"purchas",
 		data(){
 			return {
 

@@ -1,9 +1,9 @@
 <template>	
-	新闻
+	商城页
 </template>
 <script>
 	export default{
-		name:"newsMovie",
+		name:"mall",
 		data(){
 			return {
 
