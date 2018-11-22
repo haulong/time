@@ -31,13 +31,6 @@
 	  		</li>
 	  	</ul>
 	  </div>
-	  <ul class="nav">
-	  	<li>首页</li>
-	  	<li>购票</li>
-	  	<li>商城</li>
-	  	<li>发现</li>
-	  	<li>我的</li>
-	  </ul>
 	</div>
 </template>
 <script>
@@ -205,19 +198,6 @@
 			}
 		}
 	}
-	.nav{
-		height: 0.51rem;
-		width: 100%;
-		display: flex;
-		background: white;
-		li{
-			height: 0.51rem;
-			flex: 1;
-			font-size: 0.18rem;
-			line-height: 0.51rem;
-			text-align: center;
-			color: #006fc3;
-		}	
-	}
+	
   }
 </style>
