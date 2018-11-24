@@ -9,7 +9,7 @@
 		</div>	  		
 	  </div>
 	  <div class="playing">
-	  	<h3>正在热映（{{arr.length}}部）</h3>
+	  	<h3>正在热映（{{arr.length}}）部</h3>
 	  	<ul class="playingFilm">
 	  		<router-link tag="li" :to="'/movie/'+ data.id" v-for="data in arrhot" :key="data.movieId">
 	  			<img :src="data.img" alt="">
