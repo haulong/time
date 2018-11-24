@@ -36,10 +36,6 @@ export default{
 			this.list = res.data.keywords;
 			console.log(res.data.keywords);
 		}) 
-		axios.get('/Service/callback.mi/PageSubArea/GetRecommendationIndexInfo.api?t=2018112210393140902') .then((res)=>{
-			console.log('jjjjjj')
-			console.log(res);
-		}) 
 	},
 	beforeDestroy () {
 		this.$store.commit('close')
@@ -55,11 +51,13 @@ export default{
 			background: #1c2635;
 			display: flex;
 			.back{
+				overflow-x: hidden; 
 				width: 0.14rem;
 				height: 0.21rem;
 				margin: 0.14rem 0.14rem 0 0.15rem;
 			}
 			.select{
+				overflow-x: hidden;
 				height: 0.41rem;
 				width: 2.56rem;
 				border-radius: 0.08rem;
@@ -88,12 +86,14 @@ export default{
 			}
 		}
 		.advertisment{
+			overflow-x: hidden;
 			width: 100%;
 			height: 1.18rem;
 			border: none;
 			overflow: hidden;
 		}
 		.hotselect{
+			overflow-x: hidden;
 			width: 100%;			
 			h3{
 				height: 0.32rem;
@@ -107,7 +107,7 @@ export default{
 				line-height: 0.29rem;
 			}
 			ul{
-				height: 2.1rem;
+				height: 3.5rem;
 				width: 100%;
 				display: flex;
 				flex-wrap: wrap;
@@ -127,8 +127,4 @@ export default{
 			}
 		}
 	}
-	footer{
-		position: relative;
-		bottom: 0;
-	}	
 </style>

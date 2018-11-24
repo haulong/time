@@ -20,6 +20,11 @@ module.exports = {
           target: 'https://static4da.mtime.cn',
           host: 'static4da.mtime.cn',
           changeOrigin: true//是否转化  
+        },
+        '/movie': {
+          target: 'https://ticket-api-m.mtime.cn',
+          host: 'ticket-api-m.mtime.cn',
+          changeOrigin: true
         }
     },
 

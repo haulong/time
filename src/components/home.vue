@@ -1,5 +1,5 @@
 <template>
-	<div id="home">
+	<div id="home" v-if="arr&&list&&playwill?true:false">
 	  <div class="select">
 	  	<div class="regition"><a href="">北京</a></div>
 	  	<div class="film">
@@ -11,10 +11,10 @@
 	  <div class="playing">
 	  	<h3>正在热映（{{arr.length}}部）</h3>
 	  	<ul class="playingFilm">
-	  		<li v-for="data in arrhot">
+	  		<router-link tag="li" :to="'/movie/'+ data.id" v-for="data in arrhot" :key="data.movieId">
 	  			<img :src="data.img" alt="">
 	  			<p>{{data.t}}</p>
-	  		</li>
+	  		</router-link>
 	  	</ul>
 	  	<h3 class="titlew">即将上映（{{playwill}}部）</h3>
 	  </div>
@@ -38,9 +38,9 @@
 	export default{
 	  data () {
 	  	return {
-	  		arr: [],
+	  		arr: null,
 	  		adver: '',
-	  		list: [],
+	  		list: null,
 	  		playwill: null
 	  	}
 	  },
@@ -48,7 +48,6 @@
 	  	axios.get('/Service/callback.mi/Showtime/LocationMovies.api?locationId=290&t=2018112112553372810').then((res)=>{
 	  		this.arr = res.data.ms
 	  		this.playwill = res.data.totalComingMovie
-	  		console.log(typeof this.playwill)
 	  	})
 	  	axios.get('/Service/callback.mi/PageSubArea/MallAreaFirstH5Url.api?t=201811211344614108').then((res)=>{
 	  		this.adver = res.data.areaFirst.image

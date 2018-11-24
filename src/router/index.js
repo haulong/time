@@ -6,7 +6,7 @@ import news from '../components/news'
 import newsMovie from '../components/newsMovie'
 import home from '../components/home'
 import search from '../components/search'
-
+import filmdetail from '../components/filmdetail'
 Vue.use(Router)
 
 export default new Router({
@@ -36,6 +36,10 @@ export default new Router({
     {
       path: '/search',
       component: search
+    },
+    {
+      path: '/movie/:id',
+      component: filmdetail
     }
   ]
 })
