@@ -14,7 +14,7 @@
    		<div class="main">
    			<p class="p3">以下影院均非时光网自营</p>
    			<ul class="cinema">
-   				<li v-for="item in cinema">
+   				<li v-for="item in cinema" @click="handletheater(item.cinemaId)">
    					<div class="clear">
    						<span class="span1 l">{{item.cinameName}}</span>
    						<span class="span2 r" v-if="item.minPrice/100">{{item.minPrice/100}}元起</span>
@@ -64,6 +64,9 @@ import axios from 'axios'
 			},
 			handlecity(){
 				this.$router.push('/citylist')
+			},
+			handletheater(id){
+				this.$router.push(`/theater/${id}`);
 			}
 		},
 		mounted(){

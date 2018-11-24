@@ -10,7 +10,8 @@ const store = new Vuex.Store({
 		content:null,
 		cityid:290,
 		cityname:'北京',
-		info:[]
+		info:[],
+		cinemainfo:null
 	},
 	actions:{
 		getcinema(store){
@@ -20,7 +21,8 @@ const store = new Vuex.Store({
 				console.log(error);
 			})
 			
-		}
+		},
+
 	},
 	mutations: {
 		close (state) {
@@ -43,6 +45,9 @@ const store = new Vuex.Store({
 		changeid(state,payload){
 			state.cityid = payload.id;
 			state.cityname = payload.name;
+		},
+		changecinema(state,payload){
+			state.cinemainfo = payload;
 		}
 	}
 })

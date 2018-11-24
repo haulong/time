@@ -1,6 +1,6 @@
 <template>
 	<div>
-		影评
+		影片也
 	</div>
 </template>
 <script>

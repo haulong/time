@@ -13,7 +13,8 @@ import filmdetail from '../components/filmdetail'
 import detailList from '../components/detailList.vue'
 import comment from '../components/comment.vue'
 import detailmain from '../components/detailmain.vue'
-import cityList from '../components/cityList.vue'
+import cityList from '../components/cityList.vue' 
+import theater from '../components/theater.vue'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -29,9 +30,13 @@ export default new Router({
     	path: '/mall',
     	component: mall
     },
-	{
+	   {
       path:"/citylist",
       component:cityList
+    },
+    {
+      path:"/theater/:cinemaid",
+      component:theater
     },
     {
       path: '/news',

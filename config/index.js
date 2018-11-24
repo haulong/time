@@ -29,6 +29,11 @@ module.exports = {
           target: 'https://ticket-api-m.mtime.cn',
           host: 'ticket-api-m.mtime.cn',
           changeOrigin: true
+        },
+        '/cinema':{
+          target:'https://ticket-api-m.mtime.cn',
+          host:'ticket-api-m.mtime.cn',
+          changeOrigin:true
         }
     },
 
