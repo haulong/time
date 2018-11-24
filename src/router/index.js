@@ -79,6 +79,10 @@ export default new Router({
     {
       path:"/comment/:newsid",
       component:comment
+    },
+    {
+      path:'*',
+      redirect:'/home'
     }
   ]
 })

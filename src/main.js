@@ -7,8 +7,8 @@ import store from './store'
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import '../static/animate.min.css'
-Vue.use(Mint)Vue.config.productionTip = false
-
+Vue.use(Mint);
+Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,

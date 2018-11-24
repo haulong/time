@@ -9,7 +9,7 @@ const store = new Vuex.Store({
 		sheetVisible:false,
 		content:null,
 		cityid:290,
-		cityname:'±±¾©',
+		cityname:'åŒ—äº¬',
 		info:[]
 	},
 	actions:{

@@ -22,7 +22,7 @@
 	  <div class="focus">
 	  	<h3>今日热点</h3>
 	  	<ul>
-	  		<li v-for="data in list">
+	  		<li v-for="data in list" @click="handle(data.id)">
 	  			<img :src="data.img" alt="">
 	  			<hgroup>
 	  				<h3>{{data.title}}</h3>
@@ -42,6 +42,11 @@
 	  		adver: '',
 	  		list: null,
 	  		playwill: null
+	  	}
+	  },
+	  methods:{
+	  	handle(id){
+	  		this.$router.push(`/detailList/${id}`)
 	  	}
 	  },
 	  mounted () {

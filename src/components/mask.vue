@@ -5,7 +5,7 @@
 				<div class="div1"><span class="span1">相关电影/影人</span><i class="iconfont icon-close" @click="handlemask()"></i></div>
 					<div class="swiper-container div2">
 					    <div class="swiper-wrapper ullist">
-						      <div class="swiper-slide" v-for="datali in content.relations">
+						      <div class="swiper-slide" v-for="datali in content.relations" @click="handledetail(datali.id)">
 							      	<img :src="datali.image" alt="">
 							      	<p>{{datali.name}}</p>
 							      	<div v-if="datali.rating>0" class="rating">
@@ -55,13 +55,16 @@ import 'swiper/dist/css/swiper.css'
 						
 					})
 			},
+			handledetail(id){
+				this.$router.push(`/movie/${id}`);
+			}
 		}
 	}
 </script>
 <style scoped lang="scss">
 	#masks{
 		.masks{
-			background: rgba(0,0,0,0.6);height:100%;width:100%;position:fixed;bottom:0;
+			background: rgba(0,0,0,0.6);height:100%;width:100%;position:fixed;bottom:0;z-index:10;
 			.rela{
 				width:100%;background: white;position:absolute;bottom:0;
 				.div1{text-align: center;height:0.5rem;line-height: 0.5rem;font-size: 0.16rem;border-bottom: 1px solid grey;
