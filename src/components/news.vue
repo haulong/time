@@ -2,10 +2,10 @@
 	
 	<div id="news">
 		<ul>
-			<router-link to="/news/newsMovie" tag="li" active-class="active">é¦–é¡µ</router-link>
-			<router-link to="/news/trailer" tag="li" active-class="active">é¢„å‘Šç‰‡</router-link>
-			<router-link to="/news/toplist" tag="li" active-class="active">æŽ’è¡Œæ¦œ</router-link>
-			<router-link to="/news/review" tag="li" active-class="active">å½±è¯„</router-link>
+			<router-link to="/news/newsMovie" tag="li" active-class="active">Ê×Ò³</router-link>
+			<router-link to="/news/trailer" tag="li" active-class="active">Ô¤¸æÆ¬</router-link>
+			<router-link to="/news/toplist" tag="li" active-class="active">ÅÅÐÐ°ñ</router-link>
+			<router-link to="/news/review" tag="li" active-class="active">Ó°ÆÀ</router-link>
 		</ul>
 		<section>
 			<router-view></router-view>

@@ -8,13 +8,13 @@ import trailer from '../components/trailer.vue'
 import toplist from '../components/toplist.vue'
 import review from '../components/review.vue'
 import home from '../components/home'
+import search from '../components/search'
+import filmdetail from '../components/filmdetail'
 import detailList from '../components/detailList.vue'
 import comment from '../components/comment.vue'
 import detailmain from '../components/detailmain.vue'
 import cityList from '../components/cityList.vue'
-
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -29,7 +29,7 @@ export default new Router({
     	path: '/mall',
     	component: mall
     },
-    {
+	{
       path:"/citylist",
       component:cityList
     },
@@ -38,6 +38,7 @@ export default new Router({
       component: news,
       children: [
         {
+          path: 'movie/:id',
           path:"newsMovie",
           component: newsMovie
         },
@@ -59,7 +60,15 @@ export default new Router({
         }
       ]
     },
+	{
+      path: '/search',
+      component: search
+    },
     {
+      path: '/movie/:id',
+      component: filmdetail
+    },
+	{
       path:"/detailList/:Did",
       component:detailList
     },

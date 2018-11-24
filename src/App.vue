@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <mynav></mynav>
+    <mynav v-if="$store.state.isshow"></mynav>
     <router-view></router-view>
+    <myfooter></myfooter>
   </div>
 </template>
 
 <script>
 import mynav from './components/mynav'
+import myfooter from './components/myfooter'
 export default {
   name: 'App',
   components: {
-    mynav
+    mynav,
+    myfooter
   }
 }
 </script>
@@ -32,7 +35,8 @@ export default {
   a{
     text-decoration: none;
   }
-  html,body{
+html,body{
   height:100%;
-}
-</style>
+}img{
+    display: block;
+  }</style>

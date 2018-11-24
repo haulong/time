@@ -6,11 +6,11 @@ const path = require('path')
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+<<<<<<< HEAD
         '/Service':{
             target:"http://m.mtime.cn",
             host:"m.mtime.cn",
@@ -20,6 +20,23 @@ module.exports = {
             target:"https://ticket-m.mtime.cn",
             host:"ticket-m.mtime.cn",
             changeOrigin:true
+=======
+        '/Service': {
+          target: 'http://m.mtime.cn',
+          host: 'm.mtime.cn',
+          changeOrigin: true//是否转化
+         
+        },
+        '/feature': {
+          target: 'https://static4da.mtime.cn',
+          host: 'static4da.mtime.cn',
+          changeOrigin: true//是否转化  
+        },
+        '/movie': {
+          target: 'https://ticket-api-m.mtime.cn',
+          host: 'ticket-api-m.mtime.cn',
+          changeOrigin: true
+>>>>>>> 65bc08b15745f36799180e246477a17e10d145f0
         }
     },
 

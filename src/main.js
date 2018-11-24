@@ -3,12 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import Mint from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import '../static/animate.min.css'
-import store from './store/index.js'
-Vue.use(Mint)
-Vue.config.productionTip = false
+Vue.use(Mint)Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
