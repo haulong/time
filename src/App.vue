@@ -23,10 +23,16 @@ export default {
   html{
     font-size: 26.66666667vw;
   }
+  body{
+    font-size:0.16rem;
+  }
   li{
     list-style: none;
   }
   a{
     text-decoration: none;
   }
+  html,body{
+  height:100%;
+}
 </style>

@@ -2,7 +2,7 @@
 	<nav>
 		<img src="/static/img/logo.gif" alt="" class="left">
 		<ul>
-			<router-link tag="li" to="/" activeClass="active">首页</router-link>
+			<router-link tag="li" to="/home" activeClass="active">首页</router-link>
 			<router-link tag="li" to="/purchas" activeClass="active">购票</router-link>
 			<router-link tag="li" to="/mall" activeClass="active">商城</router-link>
 			<router-link tag="li" to="/news" activeClass="active">发现</router-link>
