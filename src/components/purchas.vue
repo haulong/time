@@ -66,7 +66,7 @@ import axios from 'axios'
 				this.$router.push('/citylist')
 			},
 			handletheater(id){
-				this.$router.push(`/theater/${id}`);
+				this.$router.push('/theater/'+id+'/date/'+new Date().getFullYear()+new Date().getMonth()+new Date().getDate());
 			}
 		},
 		mounted(){

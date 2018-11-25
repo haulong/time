@@ -17,7 +17,7 @@
 		<div class="swipers" v-if="cinemainfo">
 			<div class="swiper-container">
 			   <div class="swiper-wrapper">
-			     <div class="swiper-slide" v-for="item,index in cinemainfo.movies" @click="handle(item.movieid)">
+			     <div class="swiper-slide" v-for="item,index in cinemainfo.movies" @click="handle(item.movieId)">
 			     	<img :src="item.img" alt="">
 			      	<p>{{item.title}}</p>
 			      	<div v-if="item.ratingFinal>0" class="rating">
@@ -46,7 +46,8 @@ import info from './info.vue'
 		},
 		methods:{
 			handle(id){
-				
+				console.log(id);
+				this.$store.commit('storeId',id);
 			}
 		},
 		computed:{
@@ -59,6 +60,8 @@ import info from './info.vue'
 				console.log(res.data);
 				// this.cinemainfo = res.data.data;
 				this.$store.commit('changecinema',res.data.data);
+				this.$store.commit('storeId',res.data.data.movies[0].movieId);
+				this.$store.commit('changeDate',this.$route.params.date);
 				this.$nextTick(()=>{
 					var swiper = new Swiper('.swiper-container', {
 					     slidesPerView: 4,

@@ -15,6 +15,7 @@ import comment from '../components/comment.vue'
 import detailmain from '../components/detailmain.vue'
 import cityList from '../components/cityList.vue' 
 import theater from '../components/theater.vue'
+import online from '../components/onlineticket.vue'
 Vue.use(Router)
 export default new Router({
   routes: [
@@ -35,7 +36,7 @@ export default new Router({
       component:cityList
     },
     {
-      path:"/theater/:cinemaid",
+      path:"/theater/:cinemaid/date/:date",
       component:theater
     },
     {
@@ -76,6 +77,10 @@ export default new Router({
 	{
       path:"/detailList/:Did",
       component:detailList
+    },
+    {
+      path:"/online/:dId",
+      component:online
     },
     {
       path:"/detailmain/:newsid",

@@ -37,6 +37,9 @@ export default {
   }
 html,body{
   height:100%;
-}img{
+}
+img{
     display: block;
-  }</style>
+  }
+
+</style>

@@ -11,7 +11,9 @@ const store = new Vuex.Store({
 		cityid:290,
 		cityname:'北京',
 		info:[],
-		cinemainfo:null
+		cinemainfo:null,
+		movieId:0,
+		date:''
 	},
 	actions:{
 		getcinema(store){
@@ -48,6 +50,13 @@ const store = new Vuex.Store({
 		},
 		changecinema(state,payload){
 			state.cinemainfo = payload;
+		},
+		storeId(state,payload){
+			state.movieId = payload;
+		},
+		changeDate(state,payload){
+			state.date = payload;
+			console.log(state.date);
 		}
 	}
 })
