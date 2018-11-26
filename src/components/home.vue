@@ -1,3 +1,4 @@
+
 <template>
 	<div id="home" v-if="arr&&list&&playwill?true:false">
 	  <div class="select">

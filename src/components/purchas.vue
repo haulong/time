@@ -1,3 +1,7 @@
+
+
+
+
 <template>
   <div id="purchas">
    		<div class="head clear">

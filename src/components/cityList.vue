@@ -15,13 +15,13 @@
 			<li>
 				<div class="nav">热门城市:</div>
 				<div class="mai hot clear">
-					<p v-for="item,index in datalist" v-if="index<9">{{item.n}}</p>
+					<p v-for="item,index in datalist" v-if="index<9" @click="handle(item.id,item.n)">{{item.n}}</p>
 				</div>
 			</li>
 			<li v-for="data in city">
 				<div class="nav">{{data}}</div>
 				<div class="mai hot clear">
-					<p v-for="item,index in datalist" v-if="item.pinyinFull.indexOf(data,0,1)===0">{{item.n}}</p>
+					<p v-for="item,index in datalist" v-if="item.pinyinFull.indexOf(data,0,1)===0" @click="handle(item.id,item.n)">{{item.n}}</p>
 
 				</div>
 			</li>

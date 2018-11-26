@@ -1,3 +1,7 @@
+
+
+
+
 <template>
   <div id="app">
     <mynav v-if="$store.state.isshow"></mynav>

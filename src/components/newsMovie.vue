@@ -1,3 +1,4 @@
+
 <template>	
 	<div id="newsMovie">
 		<div class="divimg"  v-if="data">

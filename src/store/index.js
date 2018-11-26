@@ -1,3 +1,5 @@
+
+
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
@@ -9,7 +11,7 @@ const store = new Vuex.Store({
 		sheetVisible:false,
 		content:null,
 		cityid:290,
-		cityname:'北京',
+		cityname:'beijing',
 		info:[],
 		cinemainfo:null,
 		movieId:0,
